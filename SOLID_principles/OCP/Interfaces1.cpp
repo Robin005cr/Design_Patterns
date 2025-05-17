@@ -1,6 +1,6 @@
 /*
 * project   : https://github.com/Robin005cr/Design_Patterns
-* file name : ArrayOFObject.cpp
+* file name : Interfaces1.cpp
 * author    : Robin CR
 * mail id   : robinchovallurraju@gmail.com
 * LinkedIn  : https://www.linkedin.com/in/robin-cr/
