@@ -21,17 +21,43 @@ class Employee
 public:
     string name;
     int id;
+
+    Employee(string n, int i) : name(n), id(i) {}
 };
+
 class Department
 {
 public:
     string deptName;
-    std::vector<Employee *> EmployeeData;
+    vector<Employee*> EmployeeData;
+
+    void addEmployee(Employee* e)
+    {
+        EmployeeData.push_back(e);
+    }
+
+    void showEmployees()
+    {
+        for (auto emp : EmployeeData)
+        {
+            cout << "Name: " << emp->name 
+                 << ", ID: " << emp->id << endl;
+        }
+    }
 };
 
 int main()
 {
-    cout << "Has a aggregation example" << endl;
+    Employee e1("Robin", 101);
+    Employee e2("John", 102);
+
+    Department d;
+    d.deptName = "Engineering";
+
+    d.addEmployee(&e1);
+    d.addEmployee(&e2);
+
+    d.showEmployees();
 
     return 0;
 }
