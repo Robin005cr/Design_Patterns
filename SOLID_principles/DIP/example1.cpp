@@ -11,6 +11,11 @@
 * I value constructive feedback and aim to continuously improve the quality of the work.
 *
 */
+
+// Here the main dependency is that updating UI logic is touching the business logic and the reverse.
+// Consider that Mongo DB is updated with SQLite. In that case it is affecting appUpdateUI as well.
+// In large projects each class will be separate header, so the ultimate goal is that changing/modifying one class
+// should not lead to building other classes ideally.
 #include <iostream>
 using namespace std;
 
@@ -20,7 +25,7 @@ class appUpdatebusinessLogic
     
     void loadDatabase()
     {
-        cout<<"Data base created";
+        cout<<"Data base created : Mongo DB";
     }
     
 };

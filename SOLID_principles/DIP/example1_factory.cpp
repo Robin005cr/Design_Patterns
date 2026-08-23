@@ -11,6 +11,8 @@
 * I value constructive feedback and aim to continuously improve the quality of the work.
 *
 */
+
+// Factory pattern is a method to solve this problem. Here that dependency is removed.
 #include <iostream>
 using namespace std;
 
@@ -19,9 +21,10 @@ class appUpdatebusinessLogic
 public:
     void loadDatabase()
     {
-        cout << "Database created" << endl;
+        cout << "Database created SQLite" << endl;
     }
 };
+
 
 // Factory class to provide business logic object
 class DataAccessFactory
