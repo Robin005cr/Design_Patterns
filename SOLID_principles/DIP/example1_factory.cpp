@@ -1,6 +1,6 @@
 /*
 * project   : https://github.com/Robin005cr/Design_Patterns
-* file name : 2_dependency_factory.cpp
+* file name : example1_factory.cpp
 * author    : Robin CR
 * mail id   : robinchovallurraju@gmail.com
 * LinkedIn  : https://www.linkedin.com/in/robin-cr/
